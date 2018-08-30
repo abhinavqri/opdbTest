@@ -9,6 +9,7 @@ var usersRouter = require('./routes/users');
 var statusRouter = require('./routes/status');
 var sqlRouter =  require('./routes/empData');
 var empStatusRouter =  require('./routes/empStatus');
+var empLatestDateRouter =  require('./routes/empDate');
 
 var app = express();
 
@@ -34,6 +35,7 @@ app.use('/users', usersRouter);
 app.use('/status', statusRouter);
 app.use('/empData', sqlRouter);
 app.use('/empStatus', empStatusRouter);
+app.use('/empLatestDate', empLatestDateRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
