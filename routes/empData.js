@@ -6,7 +6,7 @@ var sql = require("mssql");
 var config = {
     user: 'sa',
     password: 'aP99adr%%M',
-    server: 'QRIITSQLDBW01\\QRIITSQLDB',
+    server: '10.22.30.29\\QRIITSQLDB',
     database: 'QRIREPORTING',
     options: {
         encrypt : false
